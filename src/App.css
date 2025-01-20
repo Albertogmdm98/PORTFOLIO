@@ -36,7 +36,7 @@
 /* ABOUT */
 
 .about{
-  background-color: #000143;
+  background-color: #071742;
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -53,6 +53,7 @@
 
 .text-about div{
   width: 600px;
+  /* background-color: rebeccapurple; */
 }
 .text-about h1{
   text-shadow: 0px 0px 8px #b80fcb;
@@ -74,6 +75,47 @@
   object-fit: cover;
   padding-right: 5rem;
   width: 50%;
+}
+
+/* COMPANIES */
+
+/* styles.css */
+.companies {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  padding: 20px;
+  background-color: #0f0f11;
+}
+
+.company {
+  width: 33%;
+  background-color: #282626;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company h2 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.company h3 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.company p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.company span {
+  font-size: 0.9rem;
+  color: #888;
 }
 
 /* FOOTER */

@@ -1,5 +1,7 @@
+// Menu.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import menuData from '../db/menuData.json'; // Asegúrate de ajustar la ruta según la ubicación del archivo
 
 function Menu() {
   // Definimos variantes para la animación
@@ -38,21 +40,11 @@ function Menu() {
       initial="hidden"
       animate="visible"
     >
-      <motion.li variants={itemVariants}>
-        <a href="#inicio">Inicio</a>
-      </motion.li>
-      <motion.li variants={itemVariants}>
-        <a href="#sobre-mi">Sobre mí</a>
-      </motion.li>
-      <motion.li variants={itemVariants}>
-        <a href="#experiencia">Experiencia</a>
-      </motion.li>
-      <motion.li variants={itemVariants}>
-        <a href="#proyectos">Proyectos</a>
-      </motion.li>
-      <motion.li variants={itemVariants}>
-        <a href="#contacto">Contacto</a>
-      </motion.li>
+      {menuData.menu.map((item, index) => (
+        <motion.li key={index} variants={itemVariants}>
+          <a href={item.link}>{item.nombre}</a>
+        </motion.li>
+      ))}
     </motion.ul>
   );
 }

@@ -1,0 +1,29 @@
+{
+    "companies": [
+      {
+        "nombre": "DENTSU CREATIVE SPAIN",
+        "puesto": "Desarrollador Web",
+        "descripcion": "Desarrollo y mantenimiento de aplicaciones con las últimas tecnologías, como Laravel y React.",
+        "fecha": "Enero 2024 - Actualidad",
+        "clientes": "Orange | Endesa | Caixa",
+        "link": "https://www.dentsucreative.com/es"
+      },
+      {
+        "nombre": "Kumobe 360",
+        "puesto": "Desarrollador Web",
+        "descripcion": "Desarrollo de aplicaciones Web con Codeigniter 3, con conexión a base de datos mediante WebService con PowerBuilder.",
+        "fecha": "Mayo 2023 - Enero 2024",
+        "clientes": "",
+        "link": "https://kumobe.com/"
+      },
+      {
+        "nombre": "I.E.S Lázaro Cárdenas",
+        "puesto": "Estudiante",
+        "descripcion": "Formación Profesional en Grado Superior en Desarrollo de Aplicaciones Web.",
+        "fecha": "Septiembre 2021 - Mayo 2023",
+        "clientes": "",
+        "link": "https://site.educa.madrid.org/ies.lazarocardenas.colladovillalba/"
+      }
+    ]
+  }
+  

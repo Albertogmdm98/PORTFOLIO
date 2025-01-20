@@ -1,0 +1,25 @@
+{
+    "menu": [
+      {
+        "nombre": "Inicio",
+        "link": "#inicio"
+      },
+      {
+        "nombre": "Sobre mí",
+        "link": "#sobre-mi"
+      },
+      {
+        "nombre": "Experiencia",
+        "link": "#experiencia"
+      },
+      {
+        "nombre": "Proyectos",
+        "link": "#proyectos"
+      },
+      {
+        "nombre": "Contacto",
+        "link": "#contacto"
+      }
+    ]
+  }
+  
