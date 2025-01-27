@@ -1,10 +1,9 @@
 // src/components/Companies.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import companiesData from '../db/companiesData.json'; // Asegúrate de ajustar la ruta según la ubicación del archivo
+import companiesData from '../db/companiesData.json';
 
 function Companies() {
-  // Definimos variantes para la animación del contenedor
   const listVariants = {
     hidden: {
       opacity: 0,
@@ -13,19 +12,18 @@ function Companies() {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.3, // Retardo entre animaciones de los hijos
+        staggerChildren: 0.3,
       },
     },
   };
 
-  // Definimos variantes para cada elemento de la lista
   const itemVariants = {
     hidden: {
-      y: 50, // Inicia 50px abajo
+      y: 50,
       opacity: 0,
     },
     visible: {
-      y: 0, // Termina en su posición original
+      y: 0,
       opacity: 1,
       transition: {
         type: 'spring',
@@ -45,6 +43,7 @@ function Companies() {
         <motion.div key={index} className='company' variants={itemVariants}>
           <div className='company-header'>
             <h2>
+            <img src={`/images/${company.logo}`} alt={company.nombre} />
               {company.link ? (
                 <a href={company.link} target="_blank" rel="noopener noreferrer">
                   {company.nombre}
@@ -54,10 +53,10 @@ function Companies() {
               )}
             </h2>
           </div>
-          <h3>{company.puesto}</h3>
+          <hr />
+          <h3>{company.puesto} [ <span>{company.fecha}</span> ]</h3>
           <p>{company.descripcion}</p>
-          <p>Potenciales clientes: {company.clientes}</p>
-          <span>{company.fecha}</span>
+          
         </motion.div>
       ))}
     </motion.div>

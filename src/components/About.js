@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import alberto_1 from '../alberto_1.png';
+import alberto_1 from '../assets/images/alberto_1.png';
 
 function About() {
   return (

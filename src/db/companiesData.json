@@ -1,6 +1,7 @@
 {
     "companies": [
       {
+        "logo" : "dc.png",
         "nombre": "DENTSU CREATIVE SPAIN",
         "puesto": "Desarrollador Web",
         "descripcion": "Desarrollo y mantenimiento de aplicaciones con las últimas tecnologías, como Laravel y React.",
@@ -9,14 +10,16 @@
         "link": "https://www.dentsucreative.com/es"
       },
       {
+        "logo" : "kumobe.png",
         "nombre": "Kumobe 360",
         "puesto": "Desarrollador Web",
         "descripcion": "Desarrollo de aplicaciones Web con Codeigniter 3, con conexión a base de datos mediante WebService con PowerBuilder.",
         "fecha": "Mayo 2023 - Enero 2024",
-        "clientes": "",
+        "clientes": "Fisi-on",
         "link": "https://kumobe.com/"
       },
       {
+        "logo" : "lazaro.png",
         "nombre": "I.E.S Lázaro Cárdenas",
         "puesto": "Estudiante",
         "descripcion": "Formación Profesional en Grado Superior en Desarrollo de Aplicaciones Web.",

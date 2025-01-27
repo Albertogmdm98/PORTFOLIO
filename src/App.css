@@ -4,6 +4,42 @@
   margin: 0%;
   padding: 0%;
   color: white;
+  scroll-behavior: smooth;
+}
+
+h1{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #1E1E22;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+hr{
+  margin: 1rem 0;
+}
+
+/* BOTON OCULTO HACIA ARRIBA */
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-up:hover {
+  background-color: #00bfff;
+  transform: scale(1.1);
 }
 
 /* MENU */
@@ -56,6 +92,9 @@
   /* background-color: rebeccapurple; */
 }
 .text-about h1{
+  padding: 0;
+  background-color: transparent;
+  color: white;
   text-shadow: 0px 0px 8px #b80fcb;
   font-size: 900%;
   margin-left: 1rem;
@@ -73,50 +112,107 @@
 
 .alberto_1{
   object-fit: cover;
-  padding-right: 5rem;
+  padding-right: 0rem;
   width: 50%;
 }
 
 /* COMPANIES */
 
-/* styles.css */
 .companies {
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
   background-color: #0f0f11;
+  justify-content: center;
 }
 
 .company {
-  width: 33%;
-  background-color: #282626;
-  padding: 15px;
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  background-color: #1e1e22;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.company:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.company img {
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #444;
 }
 
 .company h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
-  font-size: 3rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.company h2 a {
+  text-decoration: none;
+  color: #dfdfdf;
+  transition: 0.3s ease;
+}
+
+.company h2 a:hover {
+  text-shadow: 0px 0px 40px #b80fcb;
 }
 
 .company h3 {
-  margin: 5px 0;
-  font-size: 1.2rem;
-  color: #555;
+  text-align: start;
+  margin: 10px 0;
+  font-size: 1.4rem;
+  color: #e0e0e0;
 }
 
 .company p {
-  margin: 10px 0;
-  font-size: 1rem;
-  color: #333;
+  text-align: start;
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #bcbcbc;
+  line-height: 1.6;
 }
 
 .company span {
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 0.95rem;
+  color: #a9a9a9;
 }
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .company {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .company {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 /* FOOTER */
 
